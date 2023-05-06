@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="drum-machine">
+            <div class="top-plate">
+                <i class="turn-on"></i>
+            </div>
+            <div class="main-controls">
+                <div class="screen">Melody</div>
+                <div class="buttons">
+                    <div data-key="81" data-title="kick" class="key">q</div>
+                    <div data-key="87" data-title="snare" class="key">w</div>
+                    <div data-key="69" data-title="closed" class="key">e</div>
+    
+                    <div data-key="65" data-title="open" class="key">a</div>
+                    <div data-key="83" data-title="HORN1" class="key">s</div>
+                    <div data-key="68" data-title="HORN2" class="key">d</div>
+    
+                    <div data-key="90" data-title="PAD1" class="key">z</div>
+                    <div data-key="88" data-title="PAD2" class="key">x</div>
+                    <div data-key="67" data-title="BLAST" class="key">c</div>
+                </div>
+            </div>
+            <div class="bottom-plate"></div>
+        </div>
+    </div>
+
+    <audio data-key="81" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/kick.WAV"></audio>
+    <audio data-key="87" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/snare.WAV"></audio>
+    <audio data-key="69" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/closed.WAV"></audio>
+    <audio data-key="65" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/open.WAV"></audio>
+    <audio data-key="83" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/HORN1.wav"></audio>
+    <audio data-key="68" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/HORN2.wav"></audio>
+    <audio data-key="90" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/PAD1.wav"></audio>
+    <audio data-key="88" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/PAD2.wav"></audio>
+    <audio data-key="67" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/BLAST.wav"></audio>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
